@@ -1,0 +1,44 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>LoveIt</title>
+        <link>https://example.com/</link>
+        <description>关于 LoveIt 主题</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 02 Aug 2019 11:04:49 &#43;0800</lastBuildDate>
+            <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Redis源码-4 日志和时间</title>
+    <link>https://example.com/log/</link>
+    <pubDate>Mon, 08 Nov 2021 13:16:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/log/</guid>
+    <description><![CDATA[目标 在平时的开发过程中，调试代码是很重要的。对于调试，打印日志又是最常见，最快速的方式，本文研究redis中的日志模块。研究其中的使用方式。]]></description>
+</item><item>
+    <title>Redis源码-5 异步事件</title>
+    <link>https://example.com/ae/</link>
+    <pubDate>Mon, 08 Nov 2021 11:14:50 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/ae/</guid>
+    <description><![CDATA[目标 在Redis源码-3 网络编程, 学习了redis封装的网络库。其中用了循环不断去执行anetTcpAccept, 这是机制效率差，为了提高程]]></description>
+</item><item>
+    <title>Redis源码-3  网络编程</title>
+    <link>https://example.com/anet/</link>
+    <pubDate>Sat, 06 Nov 2021 21:09:27 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/anet/</guid>
+    <description><![CDATA[Redis 网络编程 开发一个server和client, client向server发送消息， server输出client内容 源代码 源码 准备工作：从re]]></description>
+</item><item>
+    <title>Redis中的内存分配和原子操作</title>
+    <link>https://example.com/malloc/</link>
+    <pubDate>Fri, 05 Nov 2021 13:23:09 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/malloc/</guid>
+    <description><![CDATA[内容 redis中的内存分配api redis中的原子操作api 源代码 Redis中的内存分配和原子操作 代码构建 1 2 cp /home/vagrant/github/server_installer/servers/redis/redis-6.2/src/zmalloc.* . cp /home/vagrant/github/server_installer/servers/redis/redis-6.2/src/atomicvar.h . zmalloc.c]]></description>
+</item><item>
+    <title>如何编译多文件的c程序</title>
+    <link>https://example.com/compile-multi-file/</link>
+    <pubDate>Thu, 04 Nov 2021 22:24:01 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/compile-multi-file/</guid>
+    <description><![CDATA[编译多文件 我们有以下三个文件 file1.c 1 2 3 4 5 6 7 8 9 #include &#34;stdio.h&#34;#include &#34;file2.h&#34; int main(void){ printf(&#34;%s:%s:%d\n&#34;, __FILE__, __FUNCTION__, __LINE__); foo(); return 0; } file2.h 1 void foo(void); file2.c 1 2 3 4 5 6 7 8 #include &lt;stdio.h&gt;#include &#34;file2.h&#34; void foo(void) { printf(&#34;%s:%s:%d \n&#34;, __FILE__, __FUNCTION__, __LINE__); return; } 执行 gcc file1.c file2.c -o server]]></description>
+</item></channel>
+</rss>
